@@ -10,7 +10,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20views&color=0e75b6&style=flat" alt="yourusername" /> </p>
 
 ## 🚀 Project Overview  
-<img align="right" alt="Data Migration Engine" width="250" margin-top="50%" src="https://github.com/user-attachments/assets/2a4ce6c1-9e58-4922-a882-2b73b4bc5119"/> 
+<img align="right" alt="Data Migration Engine" width="300" margin-top="50%" src="https://github.com/user-attachments/assets/2a4ce6c1-9e58-4922-a882-2b73b4bc5119"/> 
 
 **Shakti** is a high-performance **ETL (Extract, Transform, Load) engine** designed to migrate **millions of records** from **MySQL** and **Microsoft SQL Server** to **MongoDB**. It significantly enhances database performance by optimizing query execution and data retrieval while ensuring relational integrity.  
 
