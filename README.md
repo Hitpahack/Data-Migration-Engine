@@ -75,3 +75,10 @@
 - [Postman](https://www.postman.com/)  
 - [Git](https://git-scm.com/)  
 
+📞 Contact
+For any queries or support, reach out via:
+📧 Email: your.email@example.com
+🔗 LinkedIn: Your Profile
+
+🔥 Shakti is built to power high-performance data migration and analytics. 🚀
+⭐ If you found this useful, don’t forget to star the repository!    
