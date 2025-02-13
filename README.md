@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bc10054a-b6e1-4d4c-add2-708b247dcf11)<div align="center">
+<div>
      <img src="https://liveimages.algoworks.com/new-algoworks/wp-content/uploads/2022/08/25101732/Final_Logo_Animation-1.gif" alt="Shakti Data Migration Engine" width="600">
     <h1 style="display: inline;">Shakti – Data Migration & Optimization Engine</h1>
   <h3>Efficiently migrating relational data to NoSQL, reducing retrieval time by 80–90%</h3>
