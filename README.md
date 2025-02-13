@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="https://preview.redd.it/x1x1abmtu1ta1.gif?width=900&format=mp4&s=b7baa9fb28a4bfdebbd046d818268a9cb10a5d15" alt="Shakti Data Migration Engine GIF" width="600">
-
+  <img src="https://preview.redd.it/x1x1abmtu1ta1.gif?width=900&format=mp4&s=b7baa9fb28a4bfdebbd046d818268a9cb10a5d15" alt="Shakti Data Migration Engine GIF" width="600"/>
     <h1 style="display: inline;">Shakti – Data Migration & Optimization Engine</h1>
   <h3>Efficiently migrating relational data to NoSQL, reducing retrieval time by 80–90%</h3>
 </div>
