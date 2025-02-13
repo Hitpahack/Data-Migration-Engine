@@ -1,17 +1,11 @@
 <img src="https://github.com/user-attachments/assets/9ffaf857-2b5e-48ee-b741-bffb4301634b" width="1000"/>
-
-
 <div align="center>
     <h1 style="display: inline;">Shakti – Data Migration & Optimization Engine</h1>
   <h3>Efficiently migrating relational data to NoSQL, reducing retrieval time by 80–90%</h3>
 </div>
 
-
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20views&color=0e75b6&style=flat" alt="yourusername" /> </p>
-
 ## 🚀 Project Overview  
 <img align="right" alt="Data Migration Engine" width="300" margin-top="50%" src="https://github.com/user-attachments/assets/2a4ce6c1-9e58-4922-a882-2b73b4bc5119"/> 
-
 **Shakti** is a high-performance **ETL (Extract, Transform, Load) engine** designed to migrate **millions of records** from **MySQL** and **Microsoft SQL Server** to **MongoDB**. It significantly enhances database performance by optimizing query execution and data retrieval while ensuring relational integrity.  
 
 ### **Key Highlights**  
@@ -21,17 +15,10 @@
 ✅ **Optimized Complex Queries** to improve CRUD operations  
 ✅ **Data Mapping & Transformation** – Preserving relationships between relational and NoSQL structures  
 
----
-
 ## 🛠️ Tech Stack  
 
 <p align="left">
-  <a href="https://dotnet.microsoft.com/" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt=".NET" width="50" height="50"/> 
-  </a>
-  <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank"> 
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="50" height="50"/> 
-  </a>
+ 
   <a href="https://nodejs.org/" target="_blank"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" width="50" height="50"/> 
   </a>
@@ -82,16 +69,9 @@
 
 ### **Prerequisites**  
 - [Node.js](https://nodejs.org/)  
-- [.NET SDK](https://dotnet.microsoft.com/)  
 - [Python](https://www.python.org/)  
 - [MongoDB](https://www.mongodb.com/)  
 - [MySQL](https://www.mysql.com/) / [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/)  
 - [Postman](https://www.postman.com/)  
 - [Git](https://git-scm.com/)  
 
-### **Installation**  
-
-1. **Clone the repository:**  
-   ```sh
-   git clone https://github.com/yourusername/shakti.git
-   cd shakti
