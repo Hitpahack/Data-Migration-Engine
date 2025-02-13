@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/95de4e59-3086-4c6f-8e9b-325fb5528af4)
+![image](https://github.com/user-attachments/assets/9ffaf857-2b5e-48ee-b741-bffb4301634b)
+
 <div align="center>
     <h1 style="display: inline;">Shakti – Data Migration & Optimization Engine</h1>
   <h3>Efficiently migrating relational data to NoSQL, reducing retrieval time by 80–90%</h3>
