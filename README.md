@@ -1,10 +1,9 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f0be104a-b2e0-460f-b014-a2054aef3546" alt="Shakti Logo" width="100">
-  <h1 style="display: inline;">Shakti – Data Migration & Optimization Engine</h1>
+    <h1 style="display: inline;">Shakti – Data Migration & Optimization Engine</h1>
   <h3>Efficiently migrating relational data to NoSQL, reducing retrieval time by 80–90%</h3>
 </div>
 
-<img align="right" alt="Data Migration Engine" width="300" src="https://cdn.dribbble.com/users/1712260/screenshots/5842000/scene_montage_3.gif"/> 
+<img align="right" alt="Data Migration Engine" width="300" src="https://cdnl.iconscout.com/lottie/premium/preview-watermark/cloud-database-animated-icon-download-in-lottie-json-gif-static-svg-file-formats--service-migration-data-center-pack-seo-web-icons-9153498.mp4"/> 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20views&color=0e75b6&style=flat" alt="yourusername" /> </p>
 
