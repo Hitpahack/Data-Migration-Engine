@@ -6,10 +6,9 @@
   <h3>Efficiently migrating relational data to NoSQL, reducing retrieval time by 80–90%</h3>
 </div>
 
-<img align="right" alt="Data Migration Engine" width="300" src=""/> 
+<img align="right" alt="Data Migration Engine" width="300" src="https://github.com/user-attachments/assets/2a4ce6c1-9e58-4922-a882-2b73b4bc5119"/> 
 
-<p align="left"> <img src="https://cdn.prod.website-files.com/6672f2c52186ba163a2a83d7/669e8977c037117c368e6cfc_Analytics.gif" alt="yourusername" /> </p>
-
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=yourusername&label=Profile%20views&color=0e75b6&style=flat" alt="yourusername" /> </p>
 ---
 
 ## 🚀 Project Overview  
