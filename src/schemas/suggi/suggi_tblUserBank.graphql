@@ -1,0 +1,26 @@
+type BankDetails {
+  _id: ID!
+  Name: String
+  BankName: String
+  AccountNumber: String
+  IFSCCode: String
+  PaymentDuration: String
+  AccImageId: String
+  Status: String
+  CreatedBy: String
+  CreatedFrom: String
+  Default: Boolean
+}
+
+type tblUserBank {
+  _id: ID!
+  BankDetails: [BankDetails]
+}
+
+type Query {
+  suggi_getUserBankDetailsByID(id: ID!): tblUserBank
+}
+
+schema {
+  query: Query
+}

@@ -1,0 +1,37 @@
+type NewsActivity {
+  _id: ID!
+  UserId: ID
+  Activity: [NewsActivityItem]
+  CreatedOn: String
+}
+
+type NewsActivityItem {
+  NewsId: Int
+  TimeStamp: String
+}
+
+type numOfNewsActivity{
+  UserId: ID,
+  activityCount : Int
+}
+
+type numOfNewsActivityPin{
+  pincode: String,
+  activityCount : Int
+}
+
+type numOfNewsActivityDist{
+  district: String,
+  activityCount : Int
+}
+
+
+type Query {
+  suggi_getNewsActivityById(id: ID!): NewsActivity
+  suggi_getAllNewsActivities: [NewsActivity]
+  suggi_getNumberOfNewsActivitiesByUserId(UserId : ID!) : Int
+  suggi_totalNewsActivity: [numOfNewsActivity]
+  suggi_totalNewsActivityPin: [numOfNewsActivityPin]
+  suggi_totalNewsActivityDist: [numOfNewsActivityDist]
+}
+

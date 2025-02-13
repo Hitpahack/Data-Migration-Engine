@@ -1,0 +1,36 @@
+type GovtSchemeActivity {
+  _id: ID!
+  UserId: ID
+  Activity: [ActivityItem]
+  CreatedOn: String
+}
+
+type ActivityItem {
+  GovtSchemeId: Int
+  TimeStamp: String
+}
+
+type numOfGovActivity{
+  UserId: ID,
+  activityCount : Int
+}
+
+type numOfGovActivityPin{
+  pincode: String,
+  activityCount : Int
+}
+
+type numOfGovActivityDist{
+  district: String,
+  activityCount : Int
+}
+
+type Query {
+  suggi_getGovtSchemeActivityById(id: ID!): GovtSchemeActivity
+  suggi_getAllGovtSchemeActivities: [GovtSchemeActivity]
+  suggi_getNumberOfGovtSchemeActivitiesByUserId(UserId : ID!) : Int
+  suggi_totalGovSchemeActivity: [numOfGovActivity]
+  suggi_totalGovSchemeActivityPin: [numOfGovActivityPin]
+  suggi_totalGovSchemeActivityDist: [numOfGovActivityDist]
+}
+

@@ -1,0 +1,43 @@
+type tblUserChat {
+  _id: ID!
+  user_id: ID
+  date: String
+  chat_data: [chatData]
+}
+
+type chatData {
+  message_id: String
+  message_type: String
+  time: String
+  message_content: String
+  duration: String
+  response_audio: String
+  response_message: String
+  response_time: String
+}
+
+type numOfChatActivity{
+  UserId: ID,
+  activityCount : Int
+}
+
+type numOfChatActivityPin{
+  pincode: String,
+  activityCount : Int
+}
+
+type numOfChatActivityDist{
+  district: String,
+  activityCount : Int
+}
+
+type Query {
+  suggi_getChatById(id: ID!): tblUserChat
+  suggi_totalChatActivity: [numOfChatActivity]
+  suggi_totalChatActivityPin: [numOfChatActivityPin]
+  suggi_totalChatActivityDist: [numOfChatActivityDist]
+}
+
+schema {
+  query: Query
+}

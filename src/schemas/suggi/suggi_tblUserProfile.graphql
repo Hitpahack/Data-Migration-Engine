@@ -1,0 +1,56 @@
+type tblUserProfile {
+  _id: ID!
+  FirstName: String
+  LastName: String
+  Phone: Phone
+  email: Email
+  Languages: Languages
+  CreatedOn: String
+  CommodityId: [ID]
+  UserType: String
+  OTP: String
+  Role: String
+  AddressId: ID
+  Gender: String
+  ReferralId: String
+  GCMID: String
+  ProfileImage: String
+  UserId: String
+  BankId: ID
+}
+
+type Phone {
+  Primary: String
+}
+
+type Email {
+  Primary: String
+  Secondary: String
+}
+
+type Languages {
+  Primary: String
+  Secondary: [String]
+}
+
+type ReferralCounts {
+  ReferralId : String
+  count : Int
+}
+
+type suggi_pincodeWiseDownloads{
+  pincode:String
+  downloads: Int
+}
+
+type Query {
+  suggi_getUserDataById(_id: ID!): tblUserProfile
+  suggi_users: [tblUserProfile]
+  suggi_getReferralCounts : [ReferralCounts]
+  suggi_pincodeWiseDownloads: [suggi_pincodeWiseDownloads]
+}
+
+schema {
+  query: Query
+}
+

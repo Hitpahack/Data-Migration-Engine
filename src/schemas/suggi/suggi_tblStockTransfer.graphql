@@ -1,0 +1,49 @@
+type StCharges {
+    _id: ID
+    id: Int
+    others: Float
+    transportcharges: Float
+    stock_transfer_receiptno: String
+    stock_transfer_receiptdate: Date
+}
+
+type StStore {
+    _id: ID
+    id: Int
+    name: String
+}
+
+type StStockTransferDetails {
+    _id: ID
+    id: Int
+    stock_transfer_no: String
+    stock_transfer_date: Date
+    status: String
+    createddatetime: Date
+}
+
+type StProduct {
+    _id: ID
+    id: Int
+    name: String
+    unit: String
+    qty: String
+    rate:Float
+    sellingprice:Float
+}
+
+type StockTransfer {
+    _id: ID
+    received_lot: Int
+    lotqty: Int
+    product: StProduct
+    stockTransferDetails: StStockTransferDetails
+    toStore: StStore
+    fromStore: StStore
+    transportDetails: StCharges
+}
+
+type Query {
+    suggi_getStockTransferDetails: [StockTransfer]
+}
+

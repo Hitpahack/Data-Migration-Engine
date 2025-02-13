@@ -1,0 +1,29 @@
+type Address {
+  _id: ID!
+  Street: String
+  Locality: String
+  City: String
+  Block: String
+  Region: String
+  Division: String
+  District: String
+  State: String
+  Country: String
+  Pincode: String
+  Status: String
+  CreatedOn: String
+}
+
+type tblUserAddress {
+  _id: ID!
+  Address: [Address]
+  CreatedOn: String
+}
+
+type Query {
+  suggi_getUserAddressByID(id: ID!): tblUserAddress
+}
+
+schema {
+  query: Query
+}

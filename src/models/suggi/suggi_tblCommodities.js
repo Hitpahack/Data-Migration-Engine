@@ -1,0 +1,45 @@
+const mongoose = require("mongoose");
+
+const inventorySchema = new mongoose.Schema({
+  id: Number,
+  product_ref: Number,
+  description: String, 
+  serialno: String,
+  qadone: Boolean,
+  qty: Number,
+  dateofmanufacturing: Date,
+  expirydate: Date,
+  waranty_service: String,
+  location: String,
+  barcode: String,
+  isbarcodegenerated: Boolean,
+  status: String,
+  receivedby_ref: Number,
+  receiveddate: Date,
+  invoice_ref: Number,
+  store_ref: Number,
+  rate: Number,
+  discountmode: String,
+  discount: Number,
+  total: Number,
+  sellingprice: Number,
+  createddate: Date,
+  gst: Number,
+  productgroupbyguid: String,
+  issellingpriceupdate: Boolean,
+  mrp: Number,
+  MiscCharge: Number,
+  Margin: Number,
+  baseunit: String,
+  subqty: Number,
+  subunit: String,
+  soldqty: Number,
+  lotnumber: String,
+  hsn: String, 
+  defectiveqty: Number,
+  saledefectiveqty: Number,
+}, { collection: "tblstockproduct" });
+
+const Inventory = mongoose.model("tblstockproduct", inventorySchema);
+
+module.exports = Inventory;

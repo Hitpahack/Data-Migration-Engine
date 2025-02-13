@@ -1,0 +1,196 @@
+scalar Date
+
+type invProduct {
+  _id: ID
+  id: Int
+  product_ref: Int
+  description: String
+  serialno: String
+  qadone: String
+  qty: Int
+  dateofmanufacturing: Date
+  expirydate: Date
+  waranty_service: String
+  location: String
+  barcode: String
+  isbarcodegenerated: String
+  status: String
+  receivedby_ref: Int
+  receiveddate: Date
+  invoice_ref: Int
+  store_ref: Int
+  rate: Float
+  discountmode: String
+  discount: Float
+  total: Float
+  sellingprice: Float
+  createddate: Date
+  gst: Float
+  productgroupbyguid: String
+  issellingpriceupdate: String
+  mrp: Float
+  MiscCharge: Float
+  Margin: Float
+  baseunit: String
+  subqty: Int
+  subunit: String
+  soldqty: Int
+  lotnumber: String
+  hsn: String
+  defectiveqty: Int
+  saledefectiveqty: Int
+  cnStockproduct: Float
+  transportCharges: Float
+  otherCharges: Float
+  invoice: invInvoice
+  supplier: invSupplier
+  productDetails : invProductDetails
+  storeDetails: invStore
+  landingrate: Float
+  PurchaseCreditNote : PurchaseCN
+}
+
+type PurchaseCN {
+    id : Int
+    creditnotenumber : String
+    creditnotedate : Date
+    remarks : String
+    total : Float
+    creditnotestatus : String
+    supplier_ref : Int
+    picture_ref : Int
+    isapproved : Boolean
+    store_ref : Int
+    createddatetime : Date
+    redeemedamount : Float
+}
+
+type invInvoice {
+  _id: ID
+  id: Int
+  invoiceno: String
+  invoicedate: Date
+  qty: Int
+  rate: Float
+  discountmode: String
+  discount: Float
+  roundoff: Float
+  total: Float
+  defectiveqty: Int
+  supplier_ref: Int
+  createddate: Date
+  storeid_ref: Int
+  issellingpriceupdated: String
+  sellingpriceupdateduser_ref: Int
+  others: Float
+  Transportcharges: Float
+  dcno: String
+  dcdate: String
+  discountappliedon: String
+  po_ref: String
+  shipping_address_ref: String
+  erpuniqueref: String
+  grn: String
+}
+
+type invSupplier {
+  _id: ID
+  id: Int
+  name: String
+  gstnumber: String
+  isenabled: String
+  address_ref: Int
+  picture_ref: String
+  createddate: Date
+  category: String
+  msmeregistered: String
+  msmenumber: String
+  tallycode: String
+}
+
+type invProductDetails {
+  _id: ID
+  id: Int
+  name: String
+  description: String
+  producttype_manufacture_ref: Int
+  isenabled: String
+  picture_ref: String
+  createddate: Date
+  shortcode: String
+  inventory_track_mode: String
+  sku: String
+  createduser_ref: String
+  unit: String
+  subcategory_ref: Int
+  tradetype: String
+  technicalname: String
+  newsku: String
+  packingsize: String
+  uom: String
+  productsku: String
+  tatpercentage: Float
+  warranty_service: String
+  hsn: String
+  sub_category: invSubCategory
+  manufacturer: invManufacturer
+  category: invCategory
+}
+
+type invStore {
+  _id: ID
+  id: Int
+  name: String
+  address_ref: Int
+  createddate: Date
+  invoiceformat: String
+  lastgeninvoiceno: Int
+  isenabled: String
+  parent_ref: String
+  cashledger: String
+  upiledger: String
+  costcenter: String
+  territory_ref: String
+  address: SuggiAddress
+  vertical: String
+}
+
+type invSubCategory {
+  _id: ID
+  id: Int
+  name: String
+  description: String
+  isenabled: String
+  createddate: Date
+  shortcode: String
+  HSN_SAC: String
+  deptcode: String
+  existingcategoryname: String
+  category_ref: Int
+}
+
+type invManufacturer {
+  _id: ID
+  id: Int
+  name: String
+  description: String
+  isenabled: String
+  createddate: Date
+  shortcode: String
+}
+
+type invCategory {
+  _id: ID
+  id: Int
+  name: String
+  iscertificate: String
+  createddatetime: Date
+  isenable: String
+}
+
+type Query {
+suggi_getInventory : [invProduct]
+}
+
+scalar Date
+

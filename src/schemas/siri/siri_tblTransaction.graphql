@@ -1,0 +1,189 @@
+type siri_UserDetails {
+  _id: ID!
+  Category: String
+  CropName: String
+  Quantity: Float
+  Unit: String
+  Soot: Float
+  Price: Float
+  Grade: String
+  createdBy: String
+  Payment: String
+  ProductImageId: String
+  Miscellaneous: [String]
+  HamaliDeduct : Float
+  LivesDeduct : Float
+  BuyerDeductions: Float
+  TransportationCharges : Float
+  WeighBridgeExpense : Float
+  APMCCess : Float
+  EmptyGunnyBag : Float
+  TotalMiscCharges : Float
+  QCParameter: [String]
+  ApplyQC: String
+  createdOn: String
+  UserId: String
+  Bags: Float
+  InvoiceId: String
+  userName : String
+  UserOnboardingDate: Date
+}
+
+type siri_BillingTransaction {
+  _id: ID!
+  InvoiceID: String
+  FarmerId: String
+  BankDetail: String
+  LoadId: [String]
+  DistrictCenter: String
+  GrnDate: String
+  GST: String
+  GSTtype: String
+  Status: String
+  CreatedBy: String
+  CreatedAt: String
+  LastUpdatedOn: String
+  TraderInvoiceAvailable: String
+  TraderInvoiceDate: String
+  TraderInvoiceId: String
+  TraderInvoiceImgId: String
+  InvoiceDate: String
+  LastUpdatedBy: String
+  PaymentUpdatedOn: String
+  NetPayable: Float
+  PaymentProductId: String
+  PaymentsList: [siri_Payment]
+}
+
+type siri_User {
+  userDetails : siri_UserDetails
+  billingTransaction : siri_BillingTransaction
+}
+
+type siri_Payment {
+  Type: String
+  Amount: Float
+  Status: String
+  CreatedBy: String
+  CreatedOn: String
+  ApprovedBy: String
+  ApprovedOn: String
+  PaidBy: String
+  PaidOn: String
+  PaymentMode: String
+  ReferenceNo: String
+  UpdatedBy: String
+  UpdatedOn: String
+}
+
+type siri_LoadDetails {
+  users: [siri_User]
+  CropName: String
+  Quantity: Float
+  UnLoadQuantity: Float
+  FreeQty: Float
+  BiltyFreeQty: Float
+  Unit: String
+  Grade: String
+  GradeA: Float
+  WeighBridgeQty: Float
+}
+
+type siri_TransportInformation {
+  CompanyId: String
+  DriverName: String
+  DriverPhone: String
+  DriverLicence: String
+  VehicleNumber: String
+  Wheels: String
+  PaymentDate: String
+  PaymentDone: String
+  PaymentCompletedDate: String
+  PaymentMode: String
+  UnloadedDate: String
+  Approval: String
+  AdvanceAmount: Float
+  TransportAmount: Float
+  Total: Float
+  HaltingCharges: Float
+  InvoiceID: String
+}
+
+type siri_EwayBill {
+  _id: ID!
+  EwbNo: Float
+  EwbDt: String
+  EwbValidTill: String
+  EwayBillUrl: String
+  EwayBillRequestId: String
+  EwbUpdatedDate: String
+  Status: String
+}
+
+type PaymentReceivedSchema {
+  PaymentMode : String
+  ReferenceNo : String
+  Amount : Float
+  PaymentDate : String
+}
+
+type siri_ConsumerTransaction  {
+  InvoiceID: String
+  LoadId: String
+  BuyerId: String
+  DistrictCenter: String
+  CropName: String
+  UnLoadQuantity: Float
+  InvoiceQty: Float
+  Unit: String
+  PriceQuote: Float
+  POAmount: Float
+  PaymentDate: Date
+  PaymentDone: Boolean
+  PaymentCompletedDate: Date
+  SourceLoad: Boolean
+  LastUpdatedOn: Date
+  LastUpdatedBy: String
+  Status: String
+  InvoiceDate: Date
+  CreatedBy: String
+  CreatedAt: Date
+  ReferenceNo : String
+  PaymentReceived : PaymentReceivedSchema
+}
+
+
+type siri_Load {
+  _id: ID!
+  LoadDetails: siri_LoadDetails
+  BuyerId: String
+  PurchaseOrderId: String
+  LoadId: String
+  InvoiceID: String
+  TransportInformation: siri_TransportInformation
+  HonorState: String
+  HonorDistrict: String
+  UserType: String
+  Status: String
+  TransactionType: String
+  LoadType: String
+  AssignType: String
+  createdBy: String
+  BiltyStatus: String
+  CreatedAt: Date
+  BuyerGRNImgId: String
+  BuyerGRNDeduction: Float
+  #EWayBill : [siri_EwayBill]
+  ConsumerTransaction: siri_ConsumerTransaction
+  SellingPrice : Float
+  BuyerName : String
+  BuyerOnboardingDate: Date
+  CenterType: String
+}
+
+
+type Query {
+  siri_getAllTransactions: [siri_Load]
+}
+
+scalar Date

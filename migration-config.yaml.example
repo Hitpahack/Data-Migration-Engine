@@ -1,0 +1,7 @@
+paths:
+  root-path : C:\Users\Administrator\Desktop\DEV\shakti_demo
+  migrator-path : C:\Users\Administrator\Desktop\DEV\shakti_demo\MIGRATION\migration
+  mapper-path : C:\Users\Administrator\Desktop\DEV\shakti_demo\mapping_tool\DC
+  mongodump-path : C:\Program Files\mongodb-database-tools-windows-x86_64-100.9.0\bin\mongodump.exe
+  mongorestore-path : C:\Program Files\mongodb-database-tools-windows-x86_64-100.9.0\bin\mongorestore.exe
+

@@ -1,0 +1,12 @@
+type Languages {
+  _id: ID!
+  Languages: [String]
+  CreatedAt: String
+}
+
+type Query {
+  suggi_getLanguagesById(id: ID!): Languages
+  suggi_getAllLanguages: [Languages]
+}
+
+

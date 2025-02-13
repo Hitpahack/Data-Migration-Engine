@@ -1,0 +1,89 @@
+
+type siriuserDetails {  
+  _id: ID
+  Category: String
+  CropName: String
+  Quantity: Float
+  Unit: String
+  Soot: Float
+  Price: Float
+  Grade: String
+  createdBy: String
+  Payment: Boolean
+  ProductImageId: String
+  Miscellaneous: [String]
+  HamaliDeduct: Float
+  LivesDeduct: Float
+  TransportationCharges: Float
+  WeighBridgeExpense: Float
+  APMCCess: Float
+  EmptyGunnyBag: Float
+  TotalMiscCharges: Float
+  QCParameter: [String]
+  ApplyQC: Boolean
+  createdOn: Date
+  UserId: String
+  Bags: Float
+  InvoiceId: String
+  userName: String
+}
+
+type siribillingTransaction {
+  _id: ID
+  InvoiceID: String
+  FarmerId: String
+  BankDetail: String
+  LoadId: [String]
+  DistrictCenter: String
+  GrnDate: Date
+  GST: Boolean
+  GSTtype: String
+  Status: String
+  CreatedBy: String
+  CreatedAt: Date
+  LastUpdatedOn: Date
+  TraderInvoiceAvailable: String
+  TraderInvoiceDate: Date
+  TraderInvoiceId: String
+  TraderInvoiceImgId: String
+  InvoiceDate: Date
+  LastUpdatedBy: String
+  PaymentUpdatedOn: Date
+  NetPayable: Float
+  PaymentProductId: String
+  PaymentsList: [siripayment]
+}
+
+type siripayment {
+  Type: String
+  Amount: Float
+  Status: String
+  CreatedBy: String
+  CreatedOn: Date
+  ApprovedBy: String
+  ApprovedOn: Date
+  PaidBy: String
+  PaidOn: Date
+  PaymentMode: String
+  ReferenceNo: String
+  UpdatedBy: String
+  UpdatedOn: Date
+}
+
+type siriInventory {
+    _id:ID
+    lotId:Float
+    userDetails: siriuserDetails
+    billingTransaction:siribillingTransaction
+    InventoryStatus:String
+    StockAmount:Float
+    ProcurredQty:Float
+    initialStock: Float
+    GodownID: String
+    GodownName: String
+    CreatedAt: Date
+}
+
+type Query {
+  siri_getInventory: [siriInventory]
+}

@@ -1,0 +1,19 @@
+type District {
+  name: String
+}
+
+type tblStateDistrict {
+  _id: ID!
+  State: String
+  Districts: [District]
+  GST: String
+  StateCode: Int
+}
+
+type Query {
+  suggi_getStateDataByID(id: ID!): tblStateDistrict
+}
+
+schema {
+  query: Query
+}

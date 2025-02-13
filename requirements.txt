@@ -1,0 +1,13 @@
+pyyaml
+pymongo
+pymysql
+pyfiglet
+tabulate
+pandas
+tqdm
+boto3
+python-dotenv
+pandas
+openpyxl
+schedule
+halo

@@ -1,0 +1,2 @@
+python start_migration.py
+pause

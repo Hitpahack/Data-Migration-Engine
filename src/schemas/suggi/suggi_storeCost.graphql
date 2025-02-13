@@ -1,0 +1,13 @@
+type Cost {
+  Store:String
+  Month:String
+  Year:String
+  Date:Date
+  Store_Cost:Float
+  Daily_Store_Cost:Float
+}
+
+type Query {
+  suggi_StoreCost:[Cost]
+}
+

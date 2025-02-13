@@ -1,0 +1,29 @@
+type Commodity {
+  _id: ID!
+  Name: String
+  Category: String
+  Units: [String]
+  Specifications: [Specification]
+  CreatedAt: String
+  isActive: Boolean
+  Image: String
+  Perishable: String
+  ProductValidity: Int
+  Duration: Int
+  HSNCode: Int
+  isAlive: Int
+  GST: Float
+  QCParameters: [String]
+}
+
+type Specification {
+  Type: String
+  Value: [String]
+}
+
+type Query {
+  suggi_suggi_getAllCommodities(id: ID!): Commodity
+  suggi_getAllCommodities: [Commodity]
+}
+
+

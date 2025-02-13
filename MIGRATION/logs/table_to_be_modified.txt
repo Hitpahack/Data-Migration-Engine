@@ -1,0 +1,2 @@
+#DROP TABLE tbllogintime
+#Remove column `deliverydate` from `tblpurchaseorder_supplier_mapping`

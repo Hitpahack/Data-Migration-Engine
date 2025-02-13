@@ -1,0 +1,75 @@
+type poProductDetails {
+  po_product_mapping_mongo_id: ID
+  po_product_mapping_id: Int
+  po_ref: Int
+  product_ref: Int
+  qty: Int
+  ftm_qty: Float 
+  grndate: Date 
+  rm_qty: Float 
+  rsp: Float 
+  supplier_product_mapping_mongo_id: ID
+  posupplierid_ref: Int
+  poproduct_ref: Int
+  estimatedprice: Float
+  availableqty: Int
+  receivedqty: Int
+  GST: Float
+  eta: Date
+  combined_po_product_ref: String
+  lotdetails: [invProduct]
+  productData : invProductDetails
+}
+
+type PO_Paymentdetails {
+  _id : ID
+  id : Int
+  amount : Float
+  po_ref : Float
+  paymentdate : Date
+  refno : String
+  createdatetime : Date
+  bankdetails_ref : Int
+  utrpaymentdate : Date   
+}
+
+type PO_Payment {
+  _id: ID
+  Id: Int
+  pono: String
+  status: String
+  paymentstatus: String
+  paymentDetails: [PO_Paymentdetails]
+}
+
+type poStoreDetails {
+  name : String
+  vertical: String
+}
+
+type PO {
+  _id: ID
+  Id: Int
+  pono: String
+  podate: Date
+  store_ref: Int
+  status: String
+  remarks: String 
+  type: String
+  createdby_ref: Int
+  createddatetime: Date
+  paymentstatus: String
+  products: [poProductDetails]
+  supplier_details: invSupplier
+  totalRequestedqty: Float
+  totalOrderdqty: Float
+  totalReceivedqty: Float
+  store_details: poStoreDetails
+}
+
+type Query {
+  suggi_poDetails : [PO]
+  suggi_PO_Payment : [PO_Payment]
+}
+
+scalar Date

@@ -1,0 +1,24 @@
+version: "1"
+services:
+  appolo-server:
+    container_name: appolo-server
+    build: .
+    image: appolo-server-image
+    environment:
+      - MONGO_URI=mongodb://mongodb-service:27017/shiksha_latest
+      - PORT=4000
+      - APP_MODE=dev
+    ports:
+    - "4000:4000"
+
+  mongodb-service:
+    image: mongo:latest
+    container_name: mongodb-service
+    ports:
+    - 8888:27017
+    volumes:
+      - mongodb_data_container:/data/db
+
+volumes:
+  mongodb_data_container:
+  

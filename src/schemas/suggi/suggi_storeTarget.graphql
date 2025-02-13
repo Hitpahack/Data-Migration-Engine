@@ -1,0 +1,16 @@
+type Target {
+  Store:String
+  TM:String
+  Category:String
+  Month:String
+  Year:String
+  Target:Float
+  Date:Date
+  Daily_Target:Float
+}
+
+type Query {
+  suggi_StoreTarget:[Target]
+}
+
+
