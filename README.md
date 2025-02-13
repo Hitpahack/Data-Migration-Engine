@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/9ffaf857-2b5e-48ee-b741-bffb4301634b)
+<img src="https://github.com/user-attachments/assets/9ffaf857-2b5e-48ee-b741-bffb4301634b" width="400"/>
+
 
 <div align="center>
     <h1 style="display: inline;">Shakti – Data Migration & Optimization Engine</h1>
